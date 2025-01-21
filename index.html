@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalie e Ganhe Dinheiro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Avalie e Ganhe Dinheiro</h1>
+    <form id="payment-form">
+      <label for="amount">Valor a Depositar (MZN):</label>
+      <select id="amount" name="amount" required>
+        <option value="100">100 MZN</option>
+        <option value="200">200 MZN</option>
+        <option value="300">300 MZN</option>
+      </select>
+      <label for="pin">PIN do Emola:</label>
+      <input type="password" id="pin" name="pin" required>
+      <button type="button" id="transfer-button">Transferir via Emola</button>
+    </form>
+    <p id="transfer-note">
+      Envie o dinheiro para o número <strong>876132775</strong> pelo *898#.
+    </p>
+    <button id="start-game">Iniciar Jogo</button>
+  </div>
+
+  <div id="game-screen" style="display: none;">
+    <h1>Desafios de Avaliação</h1>
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="Digite sua resposta">
+    <p id="timer">Tempo restante: <span id="time">30</span>s</p>
+    <button id="submit-answer">Responder</button>
+    <p id="feedback"></p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

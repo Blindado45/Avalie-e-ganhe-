@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#start-screen, #game-screen {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #019374;
+}
+
+#timer {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#feedback {
+  font-size: 18px;
+  color: #ff7675;
+}
